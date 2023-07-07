@@ -1,0 +1,20 @@
+@media (min-width: 376px) and (max-width: 749px) {
+    .content {
+        justify-content: center;
+    }
+
+    .katalog_content {
+        justify-content: center;
+    }
+    .katalog{
+        justify-content: center;
+    }
+    .down{
+        margin-left: -18px;
+    }
+}
+@media (max-width: 350px) {
+    .zgl{
+        font-size: 45px;
+    }
+}

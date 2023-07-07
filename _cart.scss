@@ -1,0 +1,269 @@
+@-webkit-keyframes jello-vertical {
+    0% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+    30% {
+      -webkit-transform: scale3d(0.75, 1.25, 1);
+              transform: scale3d(0.75, 1.25, 1);
+    }
+    40% {
+      -webkit-transform: scale3d(1.25, 0.75, 1);
+              transform: scale3d(1.25, 0.75, 1);
+    }
+    50% {
+      -webkit-transform: scale3d(0.85, 1.15, 1);
+              transform: scale3d(0.85, 1.15, 1);
+    }
+    65% {
+      -webkit-transform: scale3d(1.05, 0.95, 1);
+              transform: scale3d(1.05, 0.95, 1);
+    }
+    75% {
+      -webkit-transform: scale3d(0.95, 1.05, 1);
+              transform: scale3d(0.95, 1.05, 1);
+    }
+    100% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+  }
+  @keyframes jello-vertical {
+    0% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+    30% {
+      -webkit-transform: scale3d(0.75, 1.25, 1);
+              transform: scale3d(0.75, 1.25, 1);
+    }
+    40% {
+      -webkit-transform: scale3d(1.25, 0.75, 1);
+              transform: scale3d(1.25, 0.75, 1);
+    }
+    50% {
+      -webkit-transform: scale3d(0.85, 1.15, 1);
+              transform: scale3d(0.85, 1.15, 1);
+    }
+    65% {
+      -webkit-transform: scale3d(1.05, 0.95, 1);
+              transform: scale3d(1.05, 0.95, 1);
+    }
+    75% {
+      -webkit-transform: scale3d(0.95, 1.05, 1);
+              transform: scale3d(0.95, 1.05, 1);
+    }
+    100% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+  }
+  
+
+.top__cart{
+    height: 400px;
+    background-image: url(img/top_cart.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.heading-big {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 70px;
+    margin-top: 127px;
+    color: #FFFFFF;
+}
+.cart{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
+    margin-top: 64px;
+    &__form{
+        height: 514px;
+        // width: 376px;
+        background: #f7f6f7;
+        border-radius: 20px;
+        grid-column: span 4;
+    }
+
+    &__obz{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #000000;
+
+    }
+
+    &__content{
+        grid-column: span 8;
+    }
+
+    &__info{
+        width: 256px;
+    }
+
+    &__item{
+        border-top: 0.5px solid #CACDD8;
+        padding-top: 25px;
+        padding-bottom: 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &__input{
+        width: 71px;
+        height: 51px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 210%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #000000;
+        background: #F7F6F6;
+        border-radius: 6px;
+        outline: none;
+        border: none;
+        padding-left: 16px;
+        padding-right: 16px;
+        box-sizing: border-box;
+    }
+
+    &__info{
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        &__zg{
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 29px;
+            color: #000000;
+        }
+        &__text{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #888888;
+
+        }
+        &__cena{
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            color: #050505;
+
+        }
+        &__link-box{
+            display: flex;
+            gap: 30px;
+
+        }
+        &__link{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 210%;
+            color: #000000;
+            text-decoration-line: underline;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
+    &__button-box{
+        display: flex;
+        gap: 7px;
+        margin-top: 18px;
+    }
+    &__button{
+        text-decoration: none;
+        width: 200px;
+        height: 37px;
+        display: block;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #020202;
+
+        border: 1px solid #000000;
+        border-radius: 50px;
+        transition: all .3s;
+        &:hover{
+            background: #000000;
+            color: #FFFFFF;
+        }
+    }
+    &__left{
+        display: flex;
+        gap: 32px;
+    }
+
+    &__name-box{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 14px;
+    }
+}
+.form{
+    padding-top: 42px;
+    &__box{
+        padding-top: 35px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__inf{
+        padding-left: 27px;
+        padding-right: 28px;
+        display: flex;
+        flex-direction: column;
+        gap: 44px;
+    }
+    &__heading{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 36px;
+        text-align: center;
+        color: #000000;
+    }
+    &__item{
+        outline: none;
+        padding-bottom: 3px;
+        background: transparent;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+        border: none;
+        border-bottom: 1px solid #CACDD8;
+        &::placeholder{
+            color: #000000;
+        }
+    }
+    &__result{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+        margin-top: 64px;
+        text-align: center;
+    }
+    &__button{
+        align-self: center;
+        width: 290px;
+        animation: jello-vertical 0.9s 2s 2 both;
+    }
+    &__knopka{
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+    
+}
